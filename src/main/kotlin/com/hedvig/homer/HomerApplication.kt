@@ -1,11 +1,14 @@
 package com.hedvig.homer
 
+import org.springframework.boot.SpringApplication
 import org.springframework.boot.autoconfigure.SpringBootApplication
-import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class HomerApplication
-
-fun main(args: Array<String>) {
-	runApplication<HomerApplication>(*args)
+class HomerApplication {
+  companion object {
+    @JvmStatic
+    fun main(args: Array<String>) {
+      SpringApplication.run(HomerApplication::class.java, *args)
+    }
+  }
 }

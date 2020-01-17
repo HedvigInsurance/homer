@@ -37,4 +37,4 @@ build/
 /src/main/resources/application-development.yml
 
 # Media files
-*.acc
+*.aac
